@@ -1,0 +1,250 @@
+body{
+    background-color: black;
+	margin:0px;
+	color:white;
+    padding: 0%;}
+
+
+/**header**/
+
+    .header {
+        position: relative;
+        top: 0;
+        background:linear-gradient(to right,black,white);
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        height: 75px;
+		border-bottom-left-radius: 120px;
+}
+
+        .logo{
+         
+        }
+        .material-symbols-outlined{
+            margin-left: 3px;
+			position:relative;
+        }
+
+        .searchBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            margin: 0 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            padding-right: 10px;
+        }
+        
+       
+        .searchBar {
+            width: 300px;
+            padding: 10px;
+            border-radius: 25px;
+            border: 1px solid gray;
+            outline: none;
+            font-size: 16px;
+        }
+.searchBar:hover{
+	width:400px;
+}
+        
+    .icons {
+            position:absolute;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            order: -1;}
+        
+    .iconsUl {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            margin-left: auto;
+            display: flex;
+            gap: 20px; 
+        }
+        
+/**navbar**/
+.navbar{
+    
+      
+     
+
+
+}
+    .navbar ul{
+		position:relative;
+		top:-10px;
+        width: 355px;
+        padding-bottom: 6px;
+        align-items: center;
+        height: 40px;
+        list-style-type: none;
+        background-color: rgb(225, 225, 225);
+        border-radius: 20px;
+        margin: 0px;  
+        margin-top: 17px;
+        margin-left: auto; 
+        margin-right: 2px;
+        overflow: hidden;  
+    }
+    .navbar a{
+
+        color: rgb(58, 58, 58);
+        text-decoration: none;
+        padding: 15px;
+        display:block;
+        text-align: center;
+
+        font-weight: bold;
+        margin-inline: 5px;
+    }
+    
+    .navbar li{
+        float: left;
+       
+        font-family: "arima";
+        }
+
+    .navbar a:hover{
+        background-color: #f1ecec;
+        }
+    
+        
+/**dropdown left apple **/
+.dropdown{
+	position:relative;
+	top :-60px;
+    display: inline-block;
+  
+}
+.dropdown button{
+    background-color: black;
+    color: white;
+    border:none;
+    cursor: pointer;
+    position: relative;
+   
+
+}
+.dropdown a{
+    
+    display: block;
+    padding-left: 5px;
+    color: white;
+    position: relative;
+  
+}
+.dropdown .content{
+display:none;
+position: fixed;
+
+}
+
+
+.dropdown:hover .content{
+    display: block;
+    color: #b9aeae;
+}
+.dropdown a:hover{
+background-color: #b9aeae;
+}
+   /* slide banner*/
+p{color: aliceblue}
+.bottom{
+   
+    margin-bottom:  0;
+    background-color: #292626;
+    position: relative;
+    bottom:0;
+    width:fit-content
+}
+
+.bottom ul{display: flex;
+
+	
+}
+.topics{
+	
+	font-weight: bold;
+	font-size: 20px;
+	list-style: none;
+}
+.topicContainer li{
+	justify-content: space-between;
+	list-style: none;
+	padding-right: 50px;
+	float:left;
+}
+.topics img{
+	height:25px;
+	width:35px;
+	margin-bottom: -6px;
+}
+.links{
+    
+    position: relative;
+    left:-35px;
+}
+.links li{
+   font-size: 20px;
+   font-weight: bold;
+   display:block;
+   float:left;
+   padding-left: 30px;
+}
+.links ol{
+    font-size: 15px;
+    position: relative;
+    left: -20px;
+}
+.links .smIcons ol{
+    float: left;
+    margin-top: 5px;
+    margin-left: -25px;
+
+}
+
+
+/* Slides */
+.container{
+width: 85vmin;
+position: relative;
+left: 500px;
+top:100px;
+transform: translate(-50%,-50%);
+overflow: hidden;
+
+}
+.wrapper{
+    width: 100%;
+    display:flex;
+    animation:slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform:translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{transform:translateX(-200%)
+    }
+    75%{transform:translateX(-200%)
+    }
+ 80%{transform:translateX(-300%)}
+ 100%{transform:translatex(-300%)}
+
+}
+.container img{
+    width: 100%;
+}
