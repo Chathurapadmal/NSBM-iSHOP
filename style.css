@@ -1,274 +1,110 @@
-body{
-    background-color: black;
-	margin:0px;
-	color:white;
-    padding: 0%;}
-
-
-/**header**/
-
-    .header {
-        position: relative;
-        top: 0;
-        background:linear-gradient(to right,black,white);
-        display: flex;
-        justify-content: space-between;
-        padding: 0px;
-        height: 75px;
-		border-bottom-left-radius: 120px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-        .logo{
-         
-        }
-        .material-symbols-outlined{
-            margin-left: 3px;
-			position:relative;
-        }
-
-        .searchBox {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-grow: 1;
-            margin: 0 20px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-            padding-right: 10px;
-        }
-        
-       
-        .searchBar {
-            width: 300px;
-            padding: 10px;
-            border-radius: 25px;
-            border: 1px solid gray;
-            outline: none;
-            font-size: 16px;
-        }
-.searchBar:hover{
-	width:400px;
-}
-        
-    .icons {
-            position:absolute;
-            right: 20px;
-            display: flex;
-            align-items: center;
-            order: -1;}
-        
-    .iconsUl {
-            list-style: none;
-            padding: 0px;
-            margin: 0px;
-            margin-left: auto;
-            display: flex;
-            gap: 20px; 
-        }
-        
-/**navbar**/
-.navbar{
-    
-      
-     
-
-
-}
-    .navbar ul{
-		position:relative;
-		top:-10px;
-        width: 355px;
-        padding-bottom: 6px;
-        align-items: center;
-        height: 40px;
-        list-style-type: none;
-        background-color: rgb(225, 225, 225);
-        border-radius: 20px;
-        margin: 0px;  
-        margin-top: 17px;
-        margin-left: auto; 
-        margin-right: 2px;
-        overflow: hidden;  
-    }
-    .navbar a{
-
-        color: rgb(58, 58, 58);
-        text-decoration: none;
-        padding: 15px;
-        display:block;
-        text-align: center;
-
-        font-weight: bold;
-        margin-inline: 5px;
-    }
-    
-    .navbar li{
-        float: left;
-       
-        font-family: "arima";
-        }
-
-    .navbar a:hover{
-        background-color: #f1ecec;
-        }
-    
-        
-/**dropdown left apple **/
-.dropdown{
-	position:relative;
-	top :-60px;
-    display: inline-block;
-  
-}
-.dropdown button{
-    background-color: black;
-    color: white;
-    border:none;
-    cursor: pointer;
-    position: relative;
-   
-
-}
-.dropdown a{
-    
-    display: block;
-    padding-left: 5px;
-    color: white;
-    position: relative;
-  
-}
-.dropdown .content{
-display:none;
-position: fixed;
-
+body {
+    background-color: #000;
+    color: #fff;
 }
 
-
-.dropdown:hover .content{
-    display: block;
-    color: #b9aeae;
-    animation:dropdown 1s;
-}
-.dropdown a:hover{
-background-color: #b9aeae;
-}
-   /* slide banner*/
-p{color: aliceblue}
-.bottom{
-   
-    margin-bottom:  0;
-    background-color: #292626;
-    position: relative;
-    bottom:0;
-   
-}
-
-.bottom ul{display: flex;
-
-	
-}
-.topics{
-	
-	font-weight: bold;
-	font-size: 20px;
-	list-style: none;
-}
-.topicContainer li{
-	justify-content: space-between;
-	list-style: none;
-	padding-right: 50px;
-	float:left;
-}
-.topics img{
-	height:25px;
-	width:35px;
-	margin-bottom: -6px;
-}
-.links{
-    
-    position: relative;
-    left:-35px;
-}
-.links li{
-   font-size: 20px;
-   font-weight: bold;
-   display:block;
-   float:left;
-   padding-left: 30px;
-}
-.links ol{
-    font-size: 15px;
-    position: relative;
-    left: -20px;
-}
-.links .smIcons ol{
-    float: left;
-    margin-top: 5px;
-    margin-left: -25px;
-
-}
-
-
-/* Slides */
-.container{
-    width: 85vmin;
-    position: relative;
-  
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
 }
-.wrapper{
-    width: 100%;
-    display:flex;
-    animation:slide 16s infinite;
-}
-@keyframes slide{
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(0%);
-    }
-    20% {
-        transform: translateX(-100%);
-    }
-    30% {
-        transform: translateX(-100%);
-    }
-    40% {
-        transform: translateX(-200%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    60% {
-        transform: translateX(-300%);
-    }
-    70% {
-        transform: translateX(-300%);
-    }
-    80% {
-        transform: translateX(-400%);
-    }
-    90% {
-        transform: translateX(-400%);
-    }
-}
-@keyframes dropdown{
-    0% {
-        max-height: 0;
-        opacity: 0;
-    }
-    100% {
-        max-height: 200px; 
-        opacity: 1;
-    }
 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.search-bar {
+    padding: 8px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
 }
-.container img{
-    width: 100%;
+
+.header-icons .icon {
+    font-size: 20px;
+    margin-left: 15px;
 }
-hr { width:100%; height:1px; background: #fff }
+
+.hero-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    color: #aaa;
+}
+
+.hero-images img {
+    height: 200px;
+    margin: 10px;
+}
+
+.products {
+    padding: 40px;
+}
+
+.products h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    height: 100px;
+    border-radius: 8px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 10px;
+}
+
+.footer-content h4 {
+    margin-bottom: 10px;
+}
