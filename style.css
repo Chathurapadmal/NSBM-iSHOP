@@ -50,6 +50,14 @@ body{
 .searchBar:hover{
 	width:400px;
 }
+.material-symbols-outlined {
+    cursor: pointer;
+    
+  
+   
+    color: white;
+}
+
         
     .icons {
             position:absolute;
@@ -239,6 +247,7 @@ p{color: aliceblue}
     }
     40% {
         transform: translateX(-200%);
+       
     }
     50% {
         transform: translateX(-200%);
