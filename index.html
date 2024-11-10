@@ -41,21 +41,47 @@
       </div>
     </div>
   </header>
-  <!--navbar top left-->
-	<!--slider-->
-	
-    <div class="container">
-        <div class="wrapper">
-            <img src="images/slide1.png">
-            <img src="images/slide 2.png">
-            <img src="images/slide 3.png">
-            <img src="images/slide 4.png">
-            <img src="images/slide 5.png">
 
+	 <div class="slider">
+        <div class="slides">
+            <img src="images/slide 5.png" class="slide" alt="Slide 1">
+            <img src="images/slide1.png" class="slide" alt="Slide 2">
+            <img src="images/slide 2.png" class="slide" alt="Slide 3">
+			<img src="images/slide 3.png" class="slide" alt="Slide 4">
+			<img src="images/slide 4.png" class="slide" alt="Slide 5">
+			
         </div>
-       
+        <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
     </div>
-    <!--after the slider-->
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+	
     <section class="product-section">
         <h3>Latest Featured iPhone Products</h3>
         <div class="product-grid">
