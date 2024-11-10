@@ -2,7 +2,8 @@ body{
     background-color: black;
 	margin:0px;
 	color:white;
-    padding: 0%;}
+    padding: 0%;
+}
 
 
 /**header**/
@@ -10,15 +11,16 @@ body{
    /* Navbar container */
         .navbar1 {
 			position: relative;
-            background-color: #f2f2f2; /* Light gray background */
-            padding: 15px;
+            background-color: #f2f2f2;
+            padding: 20px;
             border-radius: 20px;
             display: block;
             justify-content: space-around;
             align-items: center;
             width: 100%;
          	margin-left: -10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
         }
 
         /* Navbar links */
@@ -237,15 +239,12 @@ p{color: aliceblue}
 
 /* Slides */
 .container{
-    width: 85vmin;
-    
+    width: 80px;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     align-items: center;
-    margin: 0 auto;
+    margin: 10 auto;
     overflow: hidden;
-}
-.container
     
 }
 .wrapper{
@@ -299,7 +298,7 @@ p{color: aliceblue}
 
 }
 .container img{
-    width: 100%;
+	width: 100%;
     margin-top: 20px;
 }
 hr { width:100%; height:1px; background: #fff }
@@ -368,3 +367,48 @@ hr { width:100%; height:1px; background: #fff }
         font-size: 8px;
     }
 }
+
+ .slider {
+            position: relative;
+	 		height: 400px;
+            width: 800px;
+            margin: 10px auto;
+            overflow: hidden;
+            border-radius: 05px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Slide images */
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Navigation buttons */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            font-size: 10px;
+            border: none;
+            cursor: pointer;
+            transform: translateY(-50%);
+            z-index: 10;
+			opacity: 30%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
