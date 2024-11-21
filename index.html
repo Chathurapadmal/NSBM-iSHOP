@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I SHOP</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Eczar:wght@400..800&display=swap" rel="stylesheet">    <script src="script.js"></script>
 </head>
 <body>
 <div class="top"><script src="script.js"></script>
@@ -33,63 +34,67 @@
 		<div class="right-sectionb">
 			
 			  <div class="navbar1">
-        <a href="index.html">Home</a>
-        <a href="product.html">Product</a>
+        <a href="#">Home</a>
+        <a href="#">Product</a>
         <a href="#">Contact us</a>
     </div>
         </div>
       </div>
     </div>
   </header>
-
+  <!--navbar top left-->
+	<!--slider-->
+	
+  
 <div class="slider">
-        <div class="slides">
-            <img src="images/slide1.png" class="slide" alt="Slide 2">
-            <img src="images/slide 2.png" class="slide" alt="Slide 3">
-            <img src="images/slider/dds.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/prc.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/ram.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/slider 8.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/slider 9.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/slider 11.png" class="slide" alt="Slide 2">
-            <img src="images/slider/slider 13.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/slider 15.jpg" class="slide" alt="Slide 2">
-            <img src="images/slider/ssd.jpg" class="slide" alt="Slide 2">
+    <div class="slides">
+        <img src="images/slide1.png" class="slide" alt="Slide 2">
+        <img src="images/slide 2.png" class="slide" alt="Slide 3">
+        <img src="images/slider/dds.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/prc.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/ram.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/slider 8.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/slider 9.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/slider 11.png" class="slide" alt="Slide 2">
+        <img src="images/slider/slider 13.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/slider 15.jpg" class="slide" alt="Slide 2">
+        <img src="images/slider/ssd.jpg" class="slide" alt="Slide 2">
 
-			
-        </div>
-        <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
-        <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+        
     </div>
+    <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+</div>
 
 <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
 
-        function showSlide(index) {
-            if (index >= slides.length) {
-                currentIndex = 0;
-            } else if (index < 0) {
-                currentIndex = slides.length - 1;
-            } else {
-                currentIndex = index;
-            }
-            const offset = -currentIndex * 100;
-            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    function showSlide(index) {
+        if (index >= slides.length) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = slides.length - 1;
+        } else {
+            currentIndex = index;
         }
+        const offset = -currentIndex * 100;
+        document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    }
 
-        function nextSlide() {
-            showSlide(currentIndex + 1);
-        }
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
 
-        function prevSlide() {
-            showSlide(currentIndex - 1);
-        }
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
 
-        setInterval(nextSlide, 3000); // Change slide every 3 seconds
-    </script>
-	
-<section class="product-section">
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+    <!--after the slider-->
+    <section class="product-section">
         <h3>Latest Featured iPhone Products</h3>
         <div class="product-grid">
             <div class="product-item">
@@ -110,8 +115,8 @@
             </div>
         </div>
     </section>
-
-	<section class="product-sectionb">
+    <!-- Latest Featured Apple Products -->
+    <section class="product-sectionb">
         <h3>Latest Featured Apple Products</h3>
         <div class="product-gridb">
             <div class="product-itemb">
@@ -133,54 +138,72 @@
         </div>
     </section>
 
-  <!--botttom-->
-	   <hr>
+    
+  <!--botttom--> 
+   
+        
 
-<div class="bottom">
-<div>
-	<ul class="topicContainer"><li ><div class="topics">Store Location<img src="images/store icon.png"><br></div>
-Mahenwaththa, Pitipana, Homagama, Sri Lanka.
-</li>
-		<li ><div class="topics"> Mail Us<img src="images/mail icon.png" ><br></div>
-contact.nsbmishop@gmail.com
-</li>
-		<li ><div class="topics"> Hotline
-<img src="images/hotline icom.png" height="7" ><br></div>
-0771234567</li>
+    
 
-	</ul>
-	</div>
-    <div class="links">
-        <ul>
-            <li>Categories
-                <ol>Iphones</ol>
-                <ol>MacBooks</ol>
-                <ol>IPads</ol>
-                <ol>Iwatche</ol>
-                <ol>Airods</ol>
-            </li>
-            <li>Useful Links
-                <ol>Terms & Conditions</ol>
-                <ol>Privacy Policy</ol>
-                <ol>Delivery</ol>
-            </li>
-            <li>Useful Link
-                <ol>Contact us</ol>
-                <ol>Promotions</ol>
-
-            </li>
-            <li class="smIcons">Subscribe Us
-               <div> <ol><img src="images/fb icon.png">  </ol>
-                <ol><img src="images/instergram.png"> </ol>
-                <ol><img src="images/whatsapp.png"></ol></div>
-
-            </li>
-
-        </ul>
-
-
-    </div>
-</div>
+    <div class="bottomdown">
+        <table width="100%">
+            <tr >
+                <th>Store Location</th>
+                <th>Mail Us</th>
+                <th>Hotline</th>
+            </tr>
+            <tr>
+                <td>
+                    Mahenwaththa,<br>
+                    Pitipana,<br>
+                    Homagama, Sri Lanka.
+                </td>
+                <td>
+                   contact.nsbmishop@gmail.com
+                </td>
+                <td>
+                 0712365464
+                </td>
+            </tr> 
+            <tr>
+                <th>Categories</th>
+                <th class="middletc">Useful Links</th>
+                <th>Useful Link</th>
+                
+            </tr>
+            <tr>
+                <td>
+                    Iphones<br>
+                    MacBooks<br>
+                    IPads<br>
+                    Iwatch<br>
+                    Airpods<br>
+                </td>
+                <td class="middletc">
+                    Terms & Conditions<br>
+                        Privacy Policy<br>
+                        Delivery
+                </td>
+                <td>
+                    
+                        > Contact us<br>
+                        > Promotion
+                    
+                </td>
+              
+            </tr>
+     <tr><td></td>
+        <td><div class="smicons"> 
+            follow us:<br>
+            <a><img src="images/5296499_fb_facebook_facebook logo_icon.png"></a>
+            <a><img src="images/5296765_camera_instagram_instagram logo_icon.png"></a>
+            <a><img src="images/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.png"></a></div>
+        </td>
+    <td></td>
+    </tr></table>
+    <div class="footer"
+    <footer>
+    <p class="copyright">NSBM iSHOP All Rights Reserved</p></div></footer>
 </body>
 	
 </html>
