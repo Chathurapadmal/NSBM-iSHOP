@@ -40,7 +40,7 @@ body{
             color: #000;
         }
 
-.navbar-container {
+.navbar-container {width: 100%;
   background-color: #f0f0f0;
   padding: 10px 0;
 }
@@ -49,7 +49,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 10px 20px;
   background-color: #ffffff; 
@@ -127,88 +127,9 @@ body{
 /*top left icns*
 /**navbar**/
 /**dropdown left apple **/
-/* bottom*/
-.bottomdown{margin-top: 10px;
-margin-left: -40px;}
-.bottomdown th{
-    padding-top: 20px;
-}
-.bottomdown td:nth-child(2),
-.bottomdown th:nth-child(2){
-    padding-left: 150px;
-}
-.bottomdown th,td{
-    padding-left: 130px;
-    padding-right: 130px;
-}
-.bottomdown td{
-vertical-align: top;
-text-align: center;
 
-padding-top: -10px;
-
-}
 /* slide banner*/
 p{color: aliceblue}
-.bottom{
-    margin-bottom: 20;
-    background-color: #292626;
-    position: relative;
-    bottom: 20;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 10px;
-}
-
-.bottom ul{
-	display:inline-flex
-
-	
-}
-.topics{
-	
-	font-weight: bold;
-	font-size: 20px;
-	list-style: none;
-}
-.topicContainer li{
-	justify-content: center;
-	list-style: none;
-	padding-right: 270px;
-	float: right;
-}
-.topics img{
-    height: 25px;
-    width: 35px;
-    margin-bottom: -5px;
-    padding-left: 5px;
-	padding-top: 10px;
-    left: 10px;
-    right: 10px;
-}
-.links{
-    align-content: center;
-    left:50px;
-}
-.links li{
-   font-size: 20px;
-   font-weight: bold;
-   display:block;
-   float:left;
-   padding-left: 100px;
-}
-.links ol{
-    font-size: 15px;
-    position: relative;
-    left: -20px;
-}
-.links .smIcons ol{
-    float: left;
-    margin-top: 5px;
-    margin-left: -25px;
-
-}
 
 /* Slides */
 
@@ -216,6 +137,7 @@ p{color: aliceblue}
     width: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
     align-items: center;
     margin: 10 auto;
     overflow: hidden;
@@ -329,7 +251,7 @@ hr { width:100%; height:10px; background:  #000000 }
     padding: 40px;
     background-color: #fff;
     margin-top: 20px;
-    color: #b9aeae;
+    color: #dfdfdf;
     background-color: #292626;
 }
 .product-section p{
@@ -386,6 +308,30 @@ hr { width:100%; height:10px; background:  #000000 }
 	height: auto;
     margin-bottom: 10px;
 }
+
+
+
+/* bottom section*/
+.bottomdown{margin-top: 10px;
+    margin-left: -40px;}
+    .bottomdown th{
+        padding-top: 20px;
+    }
+    .bottomdown td:nth-child(2),
+    .bottomdown th:nth-child(2){
+        padding-left: 150px;
+    }
+    .bottomdown th,td{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .bottomdown td{
+    vertical-align: top;
+    text-align: center;
+    
+    padding-top: -10px;
+    
+    }
 footer{
     margin-top: 10px;
     text-align: center;
@@ -408,11 +354,13 @@ footer{
     text-align: center;
    
 }
+/*footer section end*/
+
 /* responsive try*/
 
 
 /*at 1040px*/
-@media (max-width:920px){
+@media (max-width:930px){
     .right-sectionb{
        gap:5px;
     }
@@ -420,7 +368,7 @@ footer{
         gap:5px;
     }
 }
-@media( max-width:900px){
+@media( max-width:940px){
     .nsbm-text {
         visibility: hidden;
         display: none;
@@ -457,7 +405,7 @@ footer{
         margin-right: 0;}
          .navbar{padding: -10px -11px;}
          
-@media (max-width:700px){
+@media (max-width:720px){
     .icon{
         height: 20px;
         margin-left: -100px;
@@ -466,7 +414,7 @@ footer{
         align-items: flex-start;
     margin-right: 0;}
 }}
-@media (max-width:650px){
+@media (max-width:660px){
     .icon{
         height: 20px;
         margin-left: -100px;

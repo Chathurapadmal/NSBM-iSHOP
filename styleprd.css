@@ -171,11 +171,13 @@ body{
 .main-image {
     height: 300px;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 .thumbnail-images img {
     height: 60px;
     margin: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -208,7 +210,9 @@ body{
     padding: 10px 20px;
     margin-right: 10px;
     border: none;
+    border-radius: 25px;
     color: #fff;
+    width: 150px;
     cursor: pointer;
 }
 
@@ -268,13 +272,6 @@ body{
 .description-section h3 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-footer {
-    background-color: #111;
-    color: #aaa;
-    padding: 20px;
-    text-align: center;
 }
 
 .footer-content {
@@ -438,3 +435,51 @@ hr { width:100%; height:1px; background: #fff }
     width: 150px;
     margin-bottom: 10px;
 }
+
+
+
+
+/* bottom section*/
+.bottomdown{margin-top: 10px;
+    margin-left: -40px;}
+    .bottomdown th{
+        padding-top: 20px;
+    }
+    .bottomdown td:nth-child(2),
+    .bottomdown th:nth-child(2){
+        padding-left: 150px;
+    }
+    .bottomdown th,td{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .bottomdown td{
+    vertical-align: top;
+    text-align: center;
+    
+    padding-top: -10px;
+    
+    }
+footer{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.smicons a img{
+
+
+  height: 25px;
+
+    width: auto;
+    padding-right: 8px;
+}
+.footer{height: 20px;
+   margin-top: 2px;
+    background-color: #666;
+}
+.copyright{
+   margin-left: 111px;
+    text-align: center;
+   
+}
+/*footer section end*/
