@@ -1,0 +1,204 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(39, 37, 37);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #555;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea,button{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #323131;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+
+input:focus, textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+button {
+  background-color: #262525;
+  color: #ece5e5;
+  border:none;
+  cursor: pointer;
+  transition: background-color o.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #333;
+  outline: none;
+}
+
+
+
+
+
+
+
+.navbar {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 99%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5; 
+  border-bottom: 1px solid #ccc;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Add margin to the form to account for the fixed navbar */
+.form-container {
+  margin-top: 80px; /* Adjust based on the navbar height */
+}
+
+
+.logo h1 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; /* Black text */
+}
+
+.logo span {
+  font-style: italic;
+  color: #888; /* Gray for "iSHOP" */
+}
+
+/* Search Bar */
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.search-btn{border: 1px solid #ffffff;
+background: none;
+padding: 8px;
+border-radius: 5px;
+cursor: pointer;}
+
+.menu-button {
+  border: 1px solid #dcdada;
+  background: rgb(195, 195, 195);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 16px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.search-button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Menu Links */
+.menu-links ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu-links ul li {
+  display: inline;
+}
+
+.menu-links ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000; /* Black text */
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #ddd; /* Light gray button */
+  transition: background-color 0.3s ease;
+}
+
+.menu-links ul li a:hover {
+  background-color: #bbb; /* Darker gray on hover */
+}
+
+
+
+
+

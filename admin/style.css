@@ -82,7 +82,6 @@ h2 {
 }
 
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -106,4 +105,23 @@ table a {
 
 table a:hover {
     text-decoration: underline;
+}
+
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00c853;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #009624;
 }
