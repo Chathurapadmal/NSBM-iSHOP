@@ -41,7 +41,7 @@ $categories_result = $conn->query($categories_query);
 
         <div class="right-sectiont">
     <span class="nsbm-text">NSBM iSHOP</span>
-    <a href="cart.php" class="icon">🛒</a> <!-- Cart icon -->
+    <a href="cart.php" class="icon">🛒</a>
     <span class="icon">👤</span>
 </div>
 
@@ -49,8 +49,8 @@ $categories_result = $conn->query($categories_query);
 			
 			  <div class="navbar1">
         <a href="../index.html">Home</a>
-        <a href="../product.html">Product</a>
-        <a href="#">Contact us</a>
+        <a href="index.php">Product</a>
+        <a href="contact.html">Contact us</a>
     </div>
         </div>
       </div>
@@ -58,7 +58,6 @@ $categories_result = $conn->query($categories_query);
   </header>
 
 
-    <h1>  </h1>
     <?php
     if ($categories_result->num_rows > 0) {
         while ($category_row = $categories_result->fetch_assoc()) {

@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222020;
+    color: #333;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .search-bar {
+    flex-grow: 1;
+    margin: 0 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a.active {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Contact Us Section */
+  .contact-us {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .contact-us h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .btn-submit {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-info,
+  .social-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-info p,
+  .social-links a {
+    margin: 5px 0;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+
+
+  .bottomdown{margin-top: 10px;
+    margin-left: -40px;}
+    .bottomdown th{
+        padding-top: 20px;
+    }
+    .bottomdown td:nth-child(2),
+    .bottomdown th:nth-child(2){
+        padding-left: 150px;
+    }
+    .bottomdown th,td{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .bottomdown td{
+    vertical-align: top;
+    text-align: center;
+    
+    padding-top: -10px;
+    
+    }
+    footer{
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+    .smicons a img{
+    
+    
+      height: 25px;
+    
+        width: auto;s
+        padding-right: 8px;
+    }
+    .footer{height: 20px;
+       margin-top: 2px;
+        background-color: #141313;
+    }
+    .copyright{
+       margin-left: 111px;
+        text-align: center;
+    }

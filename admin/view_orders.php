@@ -23,9 +23,10 @@ $orders_result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Orders</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="tablestyle.css">
 </head>
-<body>
-    <h1>View Orders</h1>
+<body style="background-color:white;">
+    <h1 style="color:black;">View Orders</h1>
     <table border="1" style="width: 100%; border-collapse: collapse;">
         <thead>
             <tr>

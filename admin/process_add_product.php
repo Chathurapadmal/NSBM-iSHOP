@@ -12,8 +12,9 @@ if ($conn->connect_error) {
 
 $name = $_POST['name'];
 $description = $_POST['description'];
+$descriptionp = $_POST['descriptionp'];
 $price = $_POST['price'];
-$image_url = '';
+$image_url = '';    
 $category = $_POST['category'];
 
 
@@ -24,8 +25,8 @@ if (!empty($_FILES['image']['name'])) {
     move_uploaded_file($_FILES['image']['tmp_name'], $image_url);
 }
 
-$sql = "INSERT INTO products (name, description, price, image_url, category) 
-        VALUES ('$name', '$description', '$price', '$image_url', '$category')";
+$sql = "INSERT INTO products (name, description,descriptionp, price, image_url, category) 
+        VALUES ('$name', '$description','$descriptionp','$price', '$image_url', '$category')";
 
 
 if ($conn->query($sql) === TRUE) {

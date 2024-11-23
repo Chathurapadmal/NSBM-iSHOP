@@ -43,8 +43,9 @@
   <br><br<br><br><br><br><br>
   <div class="form-container">
     <h1>Add Product</h1>
-    <form>
-      <label for="productName">Product Name:</label>
+    <form action="process_add_product.php" method="POST" enctype="multipart/form-data">
+
+    <label for="productName">Product Name:</label>
       <input type="text" id="productName" name="productName" placeholder="Enter product name" required><br>
 
       <label for="category">Category:</label>
@@ -56,8 +57,11 @@
           <option value="airpods">AirPods</option>
         </select>
       
-      <label for="description">Description:</label>
+      <label for="description">Description (specs):</label>
       <textarea id="description" name="description" placeholder="Enter product description" rows="4" required></textarea>
+
+      <label for="descriptionp">Description (additional):</label>
+      <textarea id="descriptionp" name="descriptionp" placeholder="Enter product description" rows="4" required></textarea>
       
       <label for="price">Price:</label>
       <input type="number" id="price" name="price" placeholder="Enter price" required><br>

@@ -55,12 +55,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <h1>Edit Product</h1>
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form action="process_add_product.php" method="POST" enctype="multipart/form-data">
         <label for="name">Product Name:</label>
         <input type="text" name="name" id="name" value="<?php echo htmlspecialchars($product['name']); ?>" required><br><br>
 
-        <label for="description">Description:</label>
+        <label for="description">Description(specs):</label>
         <textarea name="description" id="description" required><?php echo htmlspecialchars($product['description']); ?></textarea><br><br>
+
+        <label for="descriptionp">Description (additional):</label>
+        <textarea id="descriptionp" name="description" placeholder="Enter product description" rows="4" required></textarea>
 
         <label for="price">Price:</label>
         <input type="number" name="price" id="price" value="<?php echo htmlspecialchars($product['price']); ?>" step="0.01" required><br><br>

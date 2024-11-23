@@ -59,9 +59,9 @@ if (!$productde) {
 		<div class="right-sectionb">
 			
 			  <div class="navbar1">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="index.php">Product</a>
-        <a href="#">Contact us</a>
+        <a href="../contact.html">Contact us</a>
     </div>
         </div>
       </div>
@@ -82,7 +82,9 @@ if (!$productde) {
             </div>
             <div class="product-actions">
                 <a href="order.php?product_id=<?php echo $productde_id; ?>" class="btn buy-now">Buy Now</a>
-                <a href="cart.php"><button class="btn add-to-cart">Add to Cart</button></a>
+                <button class="btn add-to-cart">Add to Cart</button>
+            <p><?php echo htmlspecialchars($productde['$descriptionp']); ?></p>
+
             </div>
         </div>
     </div>
