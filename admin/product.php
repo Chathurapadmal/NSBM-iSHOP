@@ -10,18 +10,18 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$productde_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+$products_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-$productde = null;
-if ($productde_id > 0) {
-    $sql = "SELECT * FROM products WHERE id = $productde_id";
+$products = null;
+if ($products_id > 0) {
+    $sql = "SELECT * FROM products WHERE id = $products_id";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        $productde = $result->fetch_assoc();
+        $products = $result->fetch_assoc();
     }
 }
 
-if (!$productde) {
+if (!$products) {
     echo "Product not found.";
     exit;
 }
@@ -32,7 +32,7 @@ if (!$productde) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($productde['name']); ?></title>
+    <title><?php echo htmlspecialchars($products['name']); ?></title>
     <link rel="stylesheet" href="prd.css">
 </head>
 <body>
@@ -72,21 +72,20 @@ if (!$productde) {
 
     <div class="product-container">
         <div class="product-image">
-            <img src="<?php echo htmlspecialchars($productde['image_url']); ?>" alt="<?php echo htmlspecialchars($productde['name']); ?>">
+            <img src="<?php echo htmlspecialchars($products['image_url']); ?>" alt="<?php echo htmlspecialchars($products['name']); ?>">
         </div>
         <div class="product-details">
-            <h1><?php echo htmlspecialchars($productde['name']); ?></h1>
-            <p><?php echo htmlspecialchars($productde['description']); ?></p>
-            <p>Price: $<?php echo htmlspecialchars($productde['price']); ?></p>
+            <h1><?php echo htmlspecialchars($products['name']); ?></h1>
+            <p><?php echo htmlspecialchars($products['description']); ?></p>
+            <p>Price: LKR<?php echo htmlspecialchars($products['price']); ?></p>
             <div class="product-options">
             </div>
             <div class="product-actions">
-                <a href="order.php?product_id=<?php echo $productde_id; ?>" class="btn buy-now">Buy Now</a>
+                <a href="order.php?product_id=<?php echo $products_id; ?>" class="btn buy-now">Buy Now</a>
                 <button class="btn add-to-cart">Add to Cart</button>
-            <p><?php echo htmlspecialchars($productde['$descriptionp']); ?></p>
-
             </div>
         </div>
+        
     </div>
 
 

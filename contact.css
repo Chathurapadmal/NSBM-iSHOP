@@ -1,52 +1,14 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #222020;
-    color: #333;
+    background-color: #ffffff;
+    color: #ffffff;
   }
   
-  header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar .search-bar {
-    flex-grow: 1;
-    margin: 0 15px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 10px;
-    padding: 5px 10px;
-  }
-  
-  .nav-links a.active {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  
-  /* Contact Us Section */
+
   .contact-us {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -91,6 +53,7 @@ body {
   .social-links {
     margin-top: 20px;
     text-align: center;
+    color: #0c0c0c;
   }
   
   .contact-info p,
@@ -100,14 +63,16 @@ body {
   
   .social-links a {
     text-decoration: none;
-    color: #ffffff;
+    color: #0c0c0c;
     font-weight: bold;
   }
   
 
 
   .bottomdown{margin-top: 10px;
-    margin-left: -40px;}
+    margin-left: -40px;
+    background-color: #0c0c0c;
+  }
     .bottomdown th{
         padding-top: 20px;
     }
@@ -136,14 +101,15 @@ body {
     
       height: 25px;
     
-        width: auto;s
+        width: auto;
         padding-right: 8px;
     }
     .footer{height: 20px;
        margin-top: 2px;
-        background-color: #141313;
+        background-color: #666;
     }
     .copyright{
        margin-left: 111px;
         text-align: center;
+    
     }

@@ -6,9 +6,7 @@ body{
     padding: 0%;}
 
 
-/**header**/
 
-   /* Navbar container */
         .navbar1 {
 			position: relative;
 			
@@ -23,7 +21,6 @@ body{
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
 
-        /* Navbar links */
         .navbar1 a {
             text-decoration: none;
             color: #333;
@@ -34,7 +31,6 @@ body{
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Link hover effect */
         .navbar1 a:hover {
             background-color: #ddd;
             color: #000;
@@ -124,14 +120,9 @@ body{
   }
   
   
-/*top left icns*
-/**navbar**/
-/**dropdown left apple **/
 
-/* slide banner*/
 p{color: aliceblue}
 
-/* Slides */
 
 .container{
     width: 80px;
@@ -209,7 +200,6 @@ hr { width:100%; height:10px; background:  #000000 }
            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        }
 
-       /* Slide images */
        .slides {
            display: flex;
            transition: transform 0.5s ease-in-out;
@@ -220,7 +210,6 @@ hr { width:100%; height:10px; background:  #000000 }
            transition: opacity 0.5s ease;
        }
 
-       /* Navigation buttons */
        .nav-btn {
            position: absolute;
            top: 50%;
@@ -245,7 +234,6 @@ hr { width:100%; height:10px; background:  #000000 }
        }.pro {
 }
 
-/*mid section*/
 
 .product-section {
     padding: 40px;
@@ -311,7 +299,6 @@ hr { width:100%; height:10px; background:  #000000 }
 
 
 
-/* bottom section*/
 .bottomdown{margin-top: 10px;
     margin-left: -40px;}
     .bottomdown th{
@@ -354,12 +341,7 @@ footer{
     text-align: center;
    
 }
-/*footer section end*/
 
-/* responsive try*/
-
-
-/*at 1040px*/
 @media (max-width:930px){
     .right-sectionb{
        gap:5px;

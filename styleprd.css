@@ -13,9 +13,7 @@ body{
 }
 
 
-/**header**/
 
-   /* Navbar container */
         .navbar1 {
 			position: relative;
             background-color: #f2f2f2;
@@ -30,7 +28,6 @@ body{
 
         }
 
-        /* Navbar links */
         .navbar1 a {
             text-decoration: none;
             color: #333;
@@ -41,14 +38,13 @@ body{
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Link hover effect */
         .navbar1 a:hover {
             background-color: #ddd;
             color: #000;
         }
 
 .navbar-container {
-  background-color: #f0f0f0; /* Light gray color for the background */
+  background-color: #f0f0f0; 
   padding: 10px 0;
 }
 
@@ -59,7 +55,7 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
-  background-color: #ffffff; /* White background for the inner navbar */
+  background-color: #ffffff; 
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -70,7 +66,7 @@ body{
 }
 
 .logo {
-  width: 80px; /* Adjust width to fit the logo nicely */
+  width: 80px; 
   margin-right: 10px;
 }
 
@@ -128,7 +124,6 @@ body{
   }
   
   
-/*top left icns*/
         
     .icons {
             position:absolute;
@@ -147,7 +142,6 @@ body{
         }
         
 
-/**navbar**/
 
 
 
@@ -342,7 +336,6 @@ body{
 }
 
 
-/* Slides */
 .container{
     width: 85vmin;
     position: relative;
@@ -405,7 +398,6 @@ body{
     width: 100%;
 }
 hr { width:100%; height:1px; background: #fff }
-/*mid section*/
 .product-section {
     padding: 40px;
     background-color: #fff;
@@ -439,7 +431,6 @@ hr { width:100%; height:1px; background: #fff }
 
 
 
-/* bottom section*/
 .bottomdown{margin-top: 10px;
     margin-left: -40px;}
     .bottomdown th{
@@ -482,4 +473,3 @@ footer{
     text-align: center;
    
 }
-/*footer section end*/

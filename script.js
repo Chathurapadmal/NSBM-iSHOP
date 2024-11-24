@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
         searchIcon.addEventListener('click', function() {
             const query = document.querySelector('.searchBar').value;
             if (query) {
-                // Redirect to a search page with the query
                 window.location.href = `/search.html?query=${encodeURIComponent(query)}`;
             } else {
                 alert("Please enter a search term.");

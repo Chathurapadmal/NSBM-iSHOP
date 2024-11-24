@@ -1,5 +1,4 @@
 <?php
-// Database connection
 $host = 'localhost';
 $user = 'root';
 $password = '';
@@ -11,7 +10,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch all orders
 $sql = "SELECT * FROM orders ORDER BY order_date DESC";
 $orders_result = $conn->query($sql);
 ?>

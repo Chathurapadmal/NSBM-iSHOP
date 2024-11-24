@@ -1,4 +1,3 @@
-/* Reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,7 +9,6 @@ body {
   height: 100vh;
 }
 
-/* Form Container */
 .form-container {
   background-color: #fff;
   padding: 20px 30px;
@@ -27,7 +25,6 @@ body {
   color: #555;
 }
 
-/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -75,7 +72,6 @@ button:hover {
   background-color: #555;
 }
 
-/* Placeholder Styling */
 input::placeholder, textarea::placeholder {
   color: #aaa;
   font-style: italic;
@@ -113,12 +109,11 @@ select:focus {
   padding: 10px 20px;
   background-color: #f5f5f5; 
   border-bottom: 1px solid #ccc;
-  z-index: 1000; /* Ensures it stays above other content */
+  z-index: 1000; 
 }
 
-/* Add margin to the form to account for the fixed navbar */
 .form-container {
-  margin-top: 80px; /* Adjust based on the navbar height */
+  margin-top: 80px; 
 }
 
 
@@ -126,15 +121,14 @@ select:focus {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #000; /* Black text */
+  color: #000; 
 }
 
 .logo span {
   font-style: italic;
-  color: #888; /* Gray for "iSHOP" */
+  color: #888; 
 }
 
-/* Search Bar */
 .search-section {
   display: flex;
   align-items: center;
@@ -173,7 +167,6 @@ input[type="text"] {
   cursor: pointer;
 }
 
-/* Menu Links */
 .menu-links ul {
   display: flex;
   list-style: none;
@@ -187,18 +180,60 @@ input[type="text"] {
 .menu-links ul li a {
   text-decoration: none;
   font-size: 14px;
-  color: #000; /* Black text */
+  color: #000; 
   padding: 8px 15px;
   border-radius: 20px;
-  background-color: #ddd; /* Light gray button */
+  background-color: #ddd; 
   transition: background-color 0.3s ease;
 }
 
 .menu-links ul li a:hover {
-  background-color: #bbb; /* Darker gray on hover */
+  background-color: #bbb; 
 }
 
 
+.bottomdown{margin-top: 10px;
+  margin-left: -40px;}
+  .bottomdown th{
+      padding-top: 20px;
+  }
+  .bottomdown td:nth-child(2),
+  .bottomdown th:nth-child(2){
+      padding-left: 150px;
+  }
+  .bottomdown th,td{
+      padding-left: 130px;
+      padding-right: 130px;
+  }
+  .bottomdown td{
+  vertical-align: top;
+  text-align: center;
+  
+  padding-top: -10px;
+  
+  }
+  footer{
+      margin-top: 10px;
+      text-align: center;
+      
+  }
+  .smicons a img{
+  
+  
+    height: 25px;
+  
+      width: auto;
+      padding-right: 8px;
+  }
+  .footer{height: 20px;
+     margin-top: 2px;
+      background-color: #666;
+  }
+  .copyright{
+     margin-left: 111px;
+      text-align: center;
+
+  }
 
 
 

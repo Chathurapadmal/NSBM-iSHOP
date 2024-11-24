@@ -11,22 +11,19 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Initialize the cart if it doesn't exist
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 
-// Handle Add to Cart action
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product_id'])) {
     $product_id = intval($_POST['product_id']);
     if (!in_array($product_id, $_SESSION['cart'])) {
-        $_SESSION['cart'][] = $product_id; // Add product ID to the cart
+        $_SESSION['cart'][] = $product_id; 
     }
-    header('Location: cart.php'); // Redirect to the cart page
+    header('Location: cart.php'); 
     exit;
 }
 
-// Fetch product details for items in the cart
 $cart_items = [];
 if (!empty($_SESSION['cart'])) {
     $ids = implode(',', $_SESSION['cart']);

@@ -1,5 +1,4 @@
 <?php
-// Database connection
 $host = 'localhost';
 $user = 'root';
 $password = '';
@@ -11,15 +10,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Get order ID
 $order_id = $_GET['id'];
 
-// Fetch order details
 $order_sql = "SELECT * FROM orders WHERE id = $order_id";
 $order_result = $conn->query($order_sql);
 $order = $order_result->fetch_assoc();
 
-// Fetch order items
 $items_sql = "SELECT products.name, order_items.quantity 
               FROM order_items 
               JOIN products ON order_items.product_id = products.id 

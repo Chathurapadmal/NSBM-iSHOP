@@ -1,7 +1,6 @@
-/* General Table Styles */
 table {
   width: 100%;
-  border-collapse: collapse; /* Removes gaps between table borders */
+  border-collapse: collapse; 
   margin: 20px 0;
   font-size: 1rem;
   font-family: Arial, sans-serif;
@@ -9,14 +8,14 @@ table {
 }
 
 thead {
-  background-color: #007bff; /* Header background color */
-  color: white; /* Header text color */
+  background-color: #007bff; 
+  color: white; 
 }
 
 th, td {
   padding: 10px;
   text-align: left;
-  border: 1px solid #ddd; /* Light border for table cells */
+  border: 1px solid #ddd; 
 }
 
 th {
@@ -24,28 +23,27 @@ th {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /* Light grey background for odd rows */
+  background-color: #f9f9f9; 
 }
 
 tbody tr:nth-child(even) {
-  background-color: #fff; /* White background for even rows */
+  background-color: #fff; 
 }
 
 tbody tr:hover {
-  background-color: #f1f1f1; /* Highlight row on hover */
+  background-color: #f1f1f1; 
   cursor: pointer;
 }
 
 a {
-  color: #007bff; /* Link color */
-  text-decoration: none; /* Removes underline */
+  color: #007bff; 
+  text-decoration: none; 
 }
 
 a:hover {
-  text-decoration: underline; /* Adds underline on hover */
+  text-decoration: underline; 
 }
 
-/* Message for "No orders found" */
 td[colspan="6"] {
   text-align: center;
   font-style: italic;
@@ -53,10 +51,6 @@ td[colspan="6"] {
 }
 
 
-
-
-
-/* General Styles for Body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -65,7 +59,6 @@ body {
     color: #333;
   }
   
-  /* H1 Styling */
   h1 {
     font-size: 2rem;
     color: #007bff;
@@ -74,7 +67,6 @@ body {
     text-transform: uppercase;
   }
   
-  /* H2 Styling */
   h2 {
     font-size: 1.5rem;
     color: #333;
@@ -84,7 +76,6 @@ body {
     padding-bottom: 5px;
   }
   
-  /* Paragraph Styling */
   p {
     margin: 10px 0;
     font-size: 1rem;
@@ -94,9 +85,8 @@ body {
     color: #555;
   }
   
-  /* List Styling */
   ul {
-    list-style-type: none; /* Removes bullet points */
+    list-style-type: none; 
     padding: 0;
     margin: 15px 0;
   }
@@ -111,11 +101,10 @@ body {
   }
   
   ul li:hover {
-    background-color: #f1f1f1; /* Highlight on hover */
+    background-color: #f1f1f1; 
     cursor: pointer;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     body {
       margin: 10px;
