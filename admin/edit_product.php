@@ -40,8 +40,47 @@ if (isset($_GET['id'])) {
 <head>
 <title>Edit Product</title>
 <link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="nav.css">
+
 </head>
 <body>
+
+
+
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <h2>NSBM <span>iSHOP</span> ADMIN</h2>
+    </div>
+
+    <div class="menu-icon">
+      <button class="menu-button">
+        <i class="menu-icon">☰</i>
+      </button>
+    
+    </div>
+
+    <div class="search-section">
+      <input type="text" placeholder="Search your product..." class="search-input">
+  <button class="search-btn"><img width="15px"; src="search.png"></img></button>
+    </div>
+
+    <nav class="menu-links">
+      <ul>
+        <li><a href="manage_product.php">Home</a></li>
+        <li><a href="add_product.php">Add Products</a></li>
+        <li><a href="view_orders.php">Orders</a></li>
+        <li><a href="admin_list.php">Admins</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
 <div class="dashboard-container">
     <h1>Edit Product</h1>
     <form action="" method="POST">

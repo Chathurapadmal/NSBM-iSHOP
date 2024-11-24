@@ -57,7 +57,9 @@ $result = $conn->query($sql);
       <ul>
         <li><a href="manage_product.php">Home</a></li>
         <li><a href="add_product.php">Add Products</a></li>
-        <li><a href="#">Orders</a></li>
+        <li><a href="view_orders.php">Orders</a></li>
+        <li><a href="admin_list.php">Admins</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </nav>
   </div>

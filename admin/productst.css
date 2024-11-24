@@ -3,136 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    color: #333;
+    color: #313131;
 }
-
-
-
-
-.navbar {
-    position: fixed; /* Fixes the navbar at the top */
-    top: 0; /* Aligns it to the top */
-    left: 0; /* Ensures it starts from the left edge */
-    width: 99%; /* Spans the full width of the screen */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f5f5f5; /* Light gray background */
-    border-bottom: 1px solid #ccc;
-    z-index: 1000; /* Ensures it stays above other content */
-  }
-  
-  /* Add margin to the form to account for the fixed navbar */
-  .form-container {
-    margin-top: 80px; /* Adjust based on the navbar height */
-  }
-  
-  
-  /* Logo Styling */
-  .logo h1 {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000; /* Black text */
-  }
-  
-  .logo span {
-    font-style: italic;
-    color: #888; /* Gray for "iSHOP" */
-  }
-  
-  /* Search Bar */
-  .search-section {
-    display: flex;
-    align-items: center;
-    gap: 1px;
-  }
-  
-  .search-btn{border: 1px solid #ffffff;
-  background: none;
-  padding: 8px;
-  border-radius: 5px;
-  cursor: pointer;}
-  
-  .menu-button {
-    border: 1px solid #dcdada;
-    background: rgb(195, 195, 195);
-    padding: 8px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .menu-icon {
-    font-size: 16px;
-  }
-  
-  input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 250px;
-  }
-  
-  .search-button {
-    border: none;
-    background: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Menu Links */
-  .menu-links ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-  }
-  
-  .menu-links ul li {
-    display: inline;
-  }
-  
-  .menu-links ul li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #000; /* Black text */
-    padding: 8px 15px;
-    border-radius: 20px;
-    background-color: #ddd; /* Light gray button */
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-links ul li a:hover {
-    background-color: #bbb; /* Darker gray on hover */
-  }
-  
-
-
 
 
 
 a{
     text-decoration: none;
     color: #fff;
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
 }
 
 
@@ -211,6 +89,7 @@ h2 {
 
 .product {
     border: 1px solid #ddd;
+    color:#333;
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
@@ -343,15 +222,4 @@ button.add-to-cart:hover {
     background-color: #218838;
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    margin-top: 20px;
-}
 
-footer p {
-    margin: 0;
-}

@@ -38,6 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 <title>Add Product</title>
 <link rel="stylesheet" href="productst.css">
+<link rel="stylesheet" href="nav.css">
+
 </head>
 <body>
 
@@ -46,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <header>
   <div class="navbar">
     <div class="logo">
-      <h1>NSBM <span>iSHOP</span> ADMIN</h1>
+      <h2>NSBM <span>iSHOP</span> ADMIN</h2>
     </div>
 
     <div class="menu-icon">
@@ -64,8 +66,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <nav class="menu-links">
       <ul>
         <li><a href="manage_product.php">Home</a></li>
-        <li><a href="">Add Products</a></li>
-        <li><a href="#">Orders</a></li>
+        <li><a href="add_product.php">Add Products</a></li>
+        <li><a href="view_orders.php">Orders</a></li>
+        <li><a href="admin_list.php">Admins</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </nav>
   </div>
