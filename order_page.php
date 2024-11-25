@@ -5,7 +5,7 @@ if (!isset($_SESSION['customer_id'])) {
     exit;
 }
 
-$product_id = $_GET['product_id']; 
+$id = $_GET['id']; 
 
 $host = 'localhost';
 $user = 'root';

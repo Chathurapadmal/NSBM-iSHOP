@@ -22,7 +22,6 @@ $colors = explode(',', $colors);
 <head>
     <link rel="stylesheet" href="product_details.css">
     <link rel="stylesheet" href="nav_footer.css">
-    <link rel="stylesheet" href="nav.css">
 
 </head>
 <body>

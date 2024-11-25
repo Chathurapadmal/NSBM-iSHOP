@@ -80,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <center>
 <form action="" method="POST" enctype="multipart/form-data" class="cont">
+<br><br>
     <h1>Adding New Products</h1>
     <label for="name">Product Name:</label>
     <input type="text" name="name" required><br>

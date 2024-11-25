@@ -85,6 +85,10 @@ if (isset($_GET['id'])) {
 
 <center>
 <form action="" method="POST" enctype="multipart/form-data" class="cont">
+<br>  <br>  
+
+  
+
     <h1>Edit Products</h1>
     <label for="name">Product Name:</label>
     <input type="text" name="name" required><br>
