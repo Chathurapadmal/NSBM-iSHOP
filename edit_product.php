@@ -41,6 +41,8 @@ if (isset($_GET['id'])) {
 <title>Edit Product</title>
 <link rel="stylesheet" href="dashboard.css">
 <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="productst.css">
+
 
 </head>
 <body>
@@ -81,26 +83,34 @@ if (isset($_GET['id'])) {
 
 
 
-<div class="dashboard-container">
-    <h1>Edit Product</h1>
-    <form action="" method="POST">
-        <label for="name">Product Name:</label>
-        <input type="text" name="name" value="<?php echo htmlspecialchars($product['name']); ?>" required><br>
-        <label for="description">Description:</label>
-        <textarea name="description" required><?php echo htmlspecialchars($product['description']); ?></textarea><br>
-        <label for="price">Price:</label>
-        <input type="number" name="price" step="0.01" value="<?php echo $product['price']; ?>" required><br>
-        <label for="specifications">Specifications:</label>
-        <textarea name="specifications" required><?php echo htmlspecialchars($product['specifications']); ?></textarea><br>
-        <label for="colors">Colors:</label>
-        <input type="text" name="colors[]" value="Red"><br>
-        <label for="category">Category:</label>
-        <select name="category" required>
-            <option value="iPhones" <?php if ($product['category'] === 'iPhones') echo 'selected'; ?>>iPhones</option>
-            <option value="MacBooks" <?php if ($product['category'] === 'MacBooks') echo 'selected'; ?>>MacBooks</option>
-        </select><br>
-        <button type="submit">Update Product</button>
-    </form>
+<center>
+<form action="" method="POST" enctype="multipart/form-data" class="cont">
+    <h1>Edit Products</h1>
+    <label for="name">Product Name:</label>
+    <input type="text" name="name" required><br>
+    <label for="description" >Description:</label>
+    <textarea name="description" required></textarea><br>
+    <label for="price">Price:</label>
+    <input type="number" name="price" step="0.01" required><br>
+    <label for="specifications">Specifications:</label>
+    <textarea name="specifications" required></textarea><br>
+    <label for="colors">Colors:</label>
+    <input type="text" name="colors[]" placeholder="e.g., Red" required>
+    <input type="text" name="colors[]" placeholder="e.g., Blue">
+    <input type="text" name="colors[]" placeholder="e.g., Green"><br>
+    <label for="category">Category:</label>
+    <select name="category" required>
+        <option value="iPhones">iPhones</option>
+        <option value="MacBooks">MacBooks</option>
+        <option value="iPads">iPads</option>
+        <option value="AirPods">AirPods</option>
+    </select><br>
+    <label for="image">Product Image:</label>
+    <input type="file" name="image" required><br>
+    <button type="submit">Add Product</button>
+    <button> <a href="manage_product.php">Return Dashboard</a> </button>
+</form>
+</center>
 </div>
 </body>
 </html>
