@@ -7,9 +7,7 @@ body{
     }
 
 
-/**header**/
 
-   /* Navbar container */
         .navbar1 {
 			position: relative;
             background-color: #f2f2f2;
@@ -23,7 +21,6 @@ body{
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
 
-        /* Navbar links */
         .navbar1 a {
             text-decoration: none;
             color: #333;
@@ -35,7 +32,6 @@ body{
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Link hover effect */
         .navbar1 a:hover {
             background-color: #ddd;
             color: #000;
@@ -125,14 +121,9 @@ body{
   }
   
   
-/*top left icns*
-/**navbar**/
-/**dropdown left apple **/
 
-/* slide banner*/
 p{color: aliceblue}
 
-/* Slides */
 
 .container{
     width: 100%;
@@ -212,7 +203,6 @@ hr { width:100%; height:10px; background:  #000000 }
            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        }
 
-       /* Slide images */
        .slides {
        
         max-height: 400px;
@@ -225,7 +215,6 @@ hr { width:100%; height:10px; background:  #000000 }
            transition: opacity 0.5s ease;
        }
 
-       /* Navigation buttons */
        .nav-btn {
            position: absolute;
            top: 50%;
@@ -249,7 +238,6 @@ hr { width:100%; height:10px; background:  #000000 }
            right: 10px;
        }
 
-/*mid section*/
 
 .product-section {
     padding: 40px;
@@ -322,12 +310,15 @@ hr { width:100%; height:10px; background:  #000000 }
     display: block; /* Remove inline spacing caused by images */
 }
 
+<<<<<<< HEAD
 /* bottom section*/
 table{
     width: 100%;
    
     font-size: clamp(5px, 2vw, 12px);
 }
+=======
+>>>>>>> c8a7969317edbc6c494ae27fdc1ce8a60179daf7
 .bottomdown{margin-top: 10px;
     margin-bottom: 10px;
    }
@@ -349,6 +340,7 @@ max-height: 25px;
     width: auto;
     padding-right: 8px;
 }
+<<<<<<< HEAD
     
     .footer {
         position: relative;
@@ -371,11 +363,18 @@ padding-bottom: 0;
 
 
 /*footer section end*/
+=======
+.footer{height: 20px;
+   margin-top: 2px;
+    background-color: #666;
+}
+.copyright{
+   margin-left: 111px;
+    text-align: center;
+   
+}
+>>>>>>> c8a7969317edbc6c494ae27fdc1ce8a60179daf7
 
-/* responsive try*/
-
-
-/*at 1040px*/
 @media (max-width:930px){
     .right-sectionb{
        gap:5px;

@@ -1,3 +1,13 @@
+
+<?php
+session_start();
+
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: login.php");
+    exit;
+}
+?>
+
 <?php
 $host = 'localhost';
 $user = 'root';
@@ -44,6 +54,7 @@ $result = $conn->query($sql);
                     echo "<td>" . htmlspecialchars($row['id']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['name']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['description']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['descriptionp']) . "</td>";
                     echo "<td>$" . htmlspecialchars($row['price']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['category']) . "</td>";
                     echo "<td><img src='" . htmlspecialchars($row['image_url']) . "' alt='Product Image' style='width: 50px;'></td>";

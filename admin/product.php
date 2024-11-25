@@ -10,9 +10,21 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$categories_query = "SELECT DISTINCT category FROM products";
-$categories_result = $conn->query($categories_query);
+$products_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
+$products = null;
+if ($products_id > 0) {
+    $sql = "SELECT * FROM products WHERE id = $products_id";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        $products = $result->fetch_assoc();
+    }
+}
+
+if (!$products) {
+    echo "Product not found.";
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +32,11 @@ $categories_result = $conn->query($categories_query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products by Category</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="style.css">
+    <title><?php echo htmlspecialchars($products['name']); ?></title>
+    <link rel="stylesheet" href="prd.css">
 </head>
 <body>
+
 
 
 <header>
@@ -40,11 +52,10 @@ $categories_result = $conn->query($categories_query);
         </div>
 
         <div class="right-sectiont">
-    <span class="nsbm-text">NSBM iSHOP</span>
-    <a href="cart.php" class="icon">🛒</a>
-    <span class="icon">👤</span>
-</div>
-
+          <span class="nsbm-text">NSBM iSHOP</span>
+          <span class="icon">🛒</span>
+          <span class="icon">👤</span>
+        </div>
 		<div class="right-sectionb">
 			
 			  <div class="navbar1">
@@ -58,41 +69,28 @@ $categories_result = $conn->query($categories_query);
   </header>
 
 
-    <?php
-    if ($categories_result->num_rows > 0) {
-        while ($category_row = $categories_result->fetch_assoc()) {
-            $category = $category_row['category'];
 
-            $products_query = "SELECT * FROM products WHERE category = '$category'";
-            $products_result = $conn->query($products_query);
+    <div class="product-container">
+        <div class="product-image">
+            <img src="<?php echo htmlspecialchars($products['image_url']); ?>" alt="<?php echo htmlspecialchars($products['name']); ?>">
+        </div>
+        <div class="product-details">
+            <h1><?php echo htmlspecialchars($products['name']); ?></h1>
+            <p><?php echo htmlspecialchars($products['description']); ?></p>
+            <p>Price: LKR<?php echo htmlspecialchars($products['price']); ?></p>
+            <div class="product-options">
+            </div>
+            <div class="product-actions">
+                <a href="order.php?product_id=<?php echo $products_id; ?>" class="btn buy-now">Buy Now</a>
+                <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+    </div>
 
-            echo "<h2>" . htmlspecialchars($category) . "</h2>";
-            echo "<div class='product-container'>";
-            if ($products_result->num_rows > 0) {
-                while ($product_row = $products_result->fetch_assoc()) {
-                    echo "<div class='product-card'>";
-                    if (!empty($product_row['image_url'])) {
-                        echo "<img src='" . htmlspecialchars($product_row['image_url']) . "' alt='Product Image'>";
-                    }
-                    echo "<h2>" . htmlspecialchars($product_row['name']) . "</h2>";
-                    echo "<p>" . htmlspecialchars($product_row['description']) . "</p>";
-                    echo "<p class='price'>Price: LKR " . htmlspecialchars($product_row['price']) . "</p>";
-                    echo "<a href='product.php?id=" . htmlspecialchars($product_row['id']) . "' class='btn'>View Product</a>";
 
-                    echo "</form>";
-                    echo "</div>";
-                }
-                
-                    
-                }
-            } 
-          
-            echo "</div>";
-        }
-    else {
-        echo "<p>No categories found.</p>";
-    }
-    ?>
+
+
 
 <div class="bottomdown">
         <table width="100%">
@@ -151,9 +149,9 @@ $categories_result = $conn->query($categories_query);
     <td></td>
     </tr></table>
     <div class="footer"
-<footer>
-
+    <footer>
     <p class="copyright">NSBM iSHOP All Rights Reserved</p></div></footer>
+
 
 </body>
 </html>
