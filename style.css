@@ -7,10 +7,12 @@ body{
     }
 
 
+/**header**/
 
+   /* Navbar container */
         .navbar1 {
 			position: relative;
-            background-color: #f2f2f2;
+            background-color: #fafdfd;
             padding: 15px;
             border-radius: 20px;
             display: block;
@@ -21,6 +23,7 @@ body{
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
 
+        /* Navbar links */
         .navbar1 a {
             text-decoration: none;
             color: #333;
@@ -31,9 +34,10 @@ body{
             border-radius: 10px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
-        .navbar1 a:hover {
-            background-color: #ddd;
+a{text-decoration: none;}
+        /* Link hover effect */
+      a:hover {
+            background-color: #e2e2e2;
             color: #000;
         }
 
@@ -119,11 +123,11 @@ body{
     font-size: 20px;
     cursor: pointer;
   }
-  
-  
 
+/* slide banner*/
 p{color: aliceblue}
 
+/* Slides */
 
 .container{
     width: 100%;
@@ -203,6 +207,7 @@ hr { width:100%; height:10px; background:  #000000 }
            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        }
 
+       /* Slide images */
        .slides {
        
         max-height: 400px;
@@ -215,6 +220,7 @@ hr { width:100%; height:10px; background:  #000000 }
            transition: opacity 0.5s ease;
        }
 
+       /* Navigation buttons */
        .nav-btn {
            position: absolute;
            top: 50%;
@@ -238,6 +244,7 @@ hr { width:100%; height:10px; background:  #000000 }
            right: 10px;
        }
 
+/*mid section*/
 
 .product-section {
     padding: 40px;
@@ -290,40 +297,36 @@ hr { width:100%; height:10px; background:  #000000 }
     border-radius: 10px;
 
 }
-@media (max-width: 576px) {
-    .product-grid, .product-gridb {
-        gap: 10px;
-    }
-}
 
 .product-grid, .product-gridb {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible column sizing */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
 
 .product-item img, .product-itemb img {
     max-width: 250px;
-    width: 100%; /* Make the image fill the container width */
-   /* Prevent it from exceeding the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove inline spacing caused by images */
+    width: 100%; 
+    height: auto;
+    display: block; 
 }
 
-<<<<<<< HEAD
 /* bottom section*/
 table{
-    width: 100%;
-   
+    width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: auto;
+   padding-right: auto
+   ;
     font-size: clamp(5px, 2vw, 12px);
 }
-=======
->>>>>>> c8a7969317edbc6c494ae27fdc1ce8a60179daf7
 .bottomdown{margin-top: 10px;
     margin-bottom: 10px;
    }
-    .bottomdown th{
-        padding-top: 20px;
+    .bottomdown th,td{
+        
+        padding:01vw 8vw 0 8vw ;
     }
   
     .bottomdown td{
@@ -340,7 +343,6 @@ max-height: 25px;
     width: auto;
     padding-right: 8px;
 }
-<<<<<<< HEAD
     
     .footer {
         position: relative;
@@ -349,32 +351,25 @@ margin-top: 10px;
 margin-bottom: -1.5vw;
 padding-bottom: 0;
 
-        background-color: #333; /* Background color for the footer */
+        background-color: #333;
         color: #fff; 
-        text-align: center; /* Center-align text (optional) */
+        text-align: center; 
      font-size: 1vw; 
     }
       
       .footer-content {
         padding: 0.5vw 0 0.5vw 0;
-        padding-left: 12vw;
+        padding-left: 8vw;
         font-size: 0.7vw;
       }
 
 
 /*footer section end*/
-=======
-.footer{height: 20px;
-   margin-top: 2px;
-    background-color: #666;
-}
-.copyright{
-   margin-left: 111px;
-    text-align: center;
-   
-}
->>>>>>> c8a7969317edbc6c494ae27fdc1ce8a60179daf7
 
+/* responsive try*/
+
+
+/*at 1040px*/
 @media (max-width:930px){
     .right-sectionb{
        gap:5px;
@@ -419,7 +414,12 @@ padding-bottom: 0;
             align-items: flex-start;
         margin-right: 0;}
         
-         
+ @media (max-width: 576px) {
+        .product-grid, .product-gridb {
+        gap: 10px;
+        }
+    }
+        
 
 
 @media (max-width:720px){
@@ -472,6 +472,8 @@ padding-bottom: 0;
         margin-right: 70px;
         justify-content: flex-end;
     }
+
+
  table{
     font-size: 2vw;
  }
